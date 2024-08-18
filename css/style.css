@@ -13,7 +13,7 @@
 }
 /* ---------------- VIDEO BACKGROUND [HOME] ----------------*/
 .home-video { 
-    padding-top: 1.5%;;
+    padding-top: 2.1%;;
     width: 100%;
     height: 100vh;  
 }
@@ -33,112 +33,135 @@
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    background-color: rgba(31, 36, 63, 0.952);
+    background-color: rgb(61, 35, 35);
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     align-items: center;
-    height: 10%;
-    object-fit: contain;
+    height: 11%;
+    /* object-fit: contain; */
     /* overflow: hidden; */
 }
 .nav-logo {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 25%;
+    width: 12%;
     height: 100%;
-    padding-left: 2%;
-    padding-right: 1%;
-    /* background-color: rgb(25, 30, 54); */
+    padding-left: .5%;
+    padding-right: .5%;
+    background-color: rgb(43, 25, 25);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .nav-logo img {
-    max-width: 100%;
-    max-height: 100%;
+    position: relative;
+    top:  -10%;
+    width: 120%;
 }
 
 .nav-itens {
-    width: 75%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 2.5%;
+    /* padding: 2.5%; */
 }
-li {
+.nav-itens li {
+    object-fit: contain;
     list-style-type: none;
     color: white;
-    margin-left: 4.5%; /* espaçamento entre itens*/
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding: 0.6em;
+    margin-left: 1.5%;
+    font-family:"Semplicita Pro";
+    /* font-family:"Open Sans", Arial, Helvetica, sans-serif; */
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.25em;
+    transition: transform 0.3s ease;
 }
 .nav-botao:hover {
-    background-color: rgb(47, 54, 88);
+    background-color: rgb(90, 74, 74);
+    border-radius: 8px;
+    transform: translateY(-2px);    
+}
+.nav-icon:hover {
+    transform: translateY(-3px);    
+}
+.logo-yt {
+    max-width: 45px;
+
 }
 .logo-discord {
-    max-width: 40px;
+    max-width: 35px;
     object-fit: contain;
 }
 .logo-gw2 {
-    max-width: 40px;
+    max-width: 35px;
     object-fit: contain;
 }
 /* ---------------- TEXT CONTENT BACKGROUNG [HOME] ----------------*/
 .texto-conteudo-home {
     z-index: 1;
-    width: 90%;
-    margin-top: 8%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 96%;
+    margin-top: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .texto-conteudo-home h1 {
-    font-family: 'Semplicita Pro', sans-serif;
-    font-size: 3.5em;
+    font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 48px;
     color: white;
+    text-shadow: 2px 2px 5px #313131;
 }
 .texto-conteudo-home p {
-    width: 62%;
+    width: 60%;
     padding-top: 3%;
     /* text-indent: 3em; */
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(238, 228, 206);
+    color: rgb(255, 242, 215);
+    text-shadow: 2px 2px 5px #313131;
 }
 .botoes {
     width: 50%;
     margin-left: 2%;
-    margin-top: 3%;
+    margin-top: 1%;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(255, 179, 37);
     padding-top: 3%;
+    height: 10%;
 }
 .botao-facaparte {
     width: 40%;
-    height: 2.8em;
-    background-color: rgba(14, 35, 104, 0.74);
-    border: solid 2px;
-    border-color: rgba(183, 220, 241, 0.527);
+    height: 3em;
+    background-color: rgba(104, 14, 14, 0.74);
+    border: solid 1px;
+    border-color: rgba(250, 91, 91, 0.911);
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.795);;
     display: flex;
     align-items: center;
     justify-content: center; 
     margin-right: 5%;
 }
+.botao-facaparte:hover {
+    background-color: rgb(151, 2, 2);
+}
 .botao-saibamais {
     width: 23%;
-    height: 2.8em;
-    background-color: rgba(31, 27, 27, 0.685);
-    border: solid 2px;
+    height: 3em;
+    background-color: rgba(53, 46, 46, 0.685);
+    border: solid 1px;
     border-color: rgba(241, 143, 31, 0.527);
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.795);;
     display: flex;
     align-items: center;
     justify-content: center; 
 }
-
+.botao-saibamais:hover {
+    background-color: #81580c;
+}
 

@@ -11,11 +11,17 @@
     font-weight: 700;
     font-style: normal;
 }
-/* ---------------- VIDEO BACKGROUND [HOME] ----------------*/
+/* ------------------------ HOME-VIDEO ------------------------*/
+
+/*------ VIDEO BACKGROUND [HOME] ------*/
 .home-video { 
     padding-top: 2.1%;;
     width: 100%;
-    height: 100vh;  
+    height: 101vh;
+    position: relative;
+    overflow: hidden;
+    border-bottom:  solid 2px;
+    border-color: rgb(33, 33, 46);
 }
 #background-video {
     position: absolute;
@@ -28,12 +34,12 @@
     z-index: -1;
     transform: translate(-50%, -50%);
 }
-/* ---------------- CABEÇALHO [HOME]----------------*/
+/* ------ CABEÇALHO [HOME]------*/
 .nav {
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    background-color: rgb(61, 35, 35);
+    background-color: rgb(33, 33, 46);
     display: flex;
     flex-direction: row;
     border-radius: 10px;
@@ -45,19 +51,17 @@
 .nav-logo {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 12%;
+    width: 15%;
     height: 100%;
-    padding-left: .5%;
-    padding-right: .5%;
-    background-color: rgb(43, 25, 25);
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(20, 22, 39);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nav-logo img {
-    position: relative;
-    top:  -10%;
-    width: 120%;
+.nav-logo .gw2-logo {
+    width: 100%;
 }
 
 .nav-itens {
@@ -66,27 +70,36 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    /* padding: 2.5%; */
+    padding-right: 1.8%;
 }
 .nav-itens li {
     object-fit: contain;
     list-style-type: none;
     color: white;
     padding: 0.6em;
-    margin-left: 1.5%;
     font-family:"Semplicita Pro";
     /* font-family:"Open Sans", Arial, Helvetica, sans-serif; */
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.15em;
     transition: transform 0.3s ease;
 }
+.nav-itens .dd-logo {
+    object-fit: contain;
+    max-width: 5%;
+}
+.nav-botao {
+    margin-left: 1%;
+}
 .nav-botao:hover {
-    background-color: rgb(90, 74, 74);
-    border-radius: 8px;
-    transform: translateY(-2px);    
+    background-color: rgb(60, 60, 75);
+    border-radius: 8px;  
+}
+.nav-icon img{
+    width: 88%;
+    padding-top: 20%;
 }
 .nav-icon:hover {
-    transform: translateY(-3px);    
+    transform: translateY(-1.5px);    
 }
 .logo-yt {
     max-width: 45px;
@@ -100,11 +113,11 @@
     max-width: 35px;
     object-fit: contain;
 }
-/* ---------------- TEXT CONTENT BACKGROUNG [HOME] ----------------*/
+/* ------ TEXT CONTENT BACKGROUNG [HOME] ------*/
 .texto-conteudo-home {
     z-index: 1;
     width: 96%;
-    margin-top: 10%;
+    margin-top: 9%;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -120,7 +133,7 @@
     /* text-indent: 3em; */
     font-size: 1.25em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 242, 215);
+    color: rgb(255, 247, 232);
     text-shadow: 2px 2px 5px #313131;
 }
 .botoes {
@@ -136,11 +149,11 @@
     height: 10%;
 }
 .botao-facaparte {
-    width: 40%;
+    width: 49%;
     height: 3em;
-    background-color: rgba(104, 14, 14, 0.74);
+    background-color: rgba(4, 11, 105, 0.74);
     border: solid 1px;
-    border-color: rgba(250, 91, 91, 0.911);
+    border-color: rgba(49, 131, 255, 0.938);
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.795);;
     display: flex;
     align-items: center;
@@ -148,7 +161,7 @@
     margin-right: 5%;
 }
 .botao-facaparte:hover {
-    background-color: rgb(151, 2, 2);
+    background-color: rgb(7, 14, 109);
 }
 .botao-saibamais {
     width: 23%;
@@ -163,5 +176,60 @@
 }
 .botao-saibamais:hover {
     background-color: #81580c;
+}
+
+/* ------------------------ CONTAINER ------------------------*/
+.container {
+    width: 100%;
+    height: 65vh;
+    border-top:  solid 3px;
+    border-bottom:  solid 3px;
+    border-color: rgb(22, 19, 19);
+    background-color: black;
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem na div */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+/* ------------------------ CONTAINER-1 ------------------------*/
+.cont-1 {
+    background-image: url('/css/imgs/img7.jpg');
+}
+
+
+/* ------------------------ CONTAINER-2 ------------------------*/
+.cont-2 {
+    background-image: url('/css/imgs/img2.jpg');
+}
+
+
+/* ------------------------ CONTAINER-3 ------------------------*/
+
+.cont-3 {
+    background-image: url('/css/imgs/img10.jpg');
+}
+
+
+/* ------------------------ CONTAINER-4 ------------------------*/
+.cont-4 {
+    background-image: url('/css/imgs/img1.jpg');
+}
+
+
+/* ------------------------ FOOTER ------------------------*/
+#footer {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(33, 33, 46);
+    overflow: hidden;
+
+}
+#footer .logo {
+    display: flex;
+    justify-content: center;
+}
+
+#footer .logo .dd-logo {
+    width: 15%;
 }
 

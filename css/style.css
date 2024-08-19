@@ -17,7 +17,7 @@
 .home-video { 
     padding-top: 2.1%;;
     width: 100%;
-    height: 101vh;
+    height: 105vh;
     position: relative;
     overflow: hidden;
     border-bottom:  solid 2px;
@@ -85,7 +85,7 @@
 }
 .nav-itens .dd-logo {
     object-fit: contain;
-    max-width: 5%;
+    max-width: 12%;
 }
 .nav-botao {
     margin-left: 1%;
@@ -123,7 +123,7 @@
 }
 .texto-conteudo-home h1 {
     font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-size: 65px;
     color: white;
     text-shadow: 2px 2px 5px #313131;
 }
@@ -137,6 +137,7 @@
     text-shadow: 2px 2px 5px #313131;
 }
 .botoes {
+    object-fit: contain;
     width: 50%;
     margin-left: 2%;
     margin-top: 1%;
@@ -162,6 +163,7 @@
 }
 .botao-facaparte:hover {
     background-color: rgb(7, 14, 109);
+    cursor: pointer;
 }
 .botao-saibamais {
     width: 23%;
@@ -186,11 +188,33 @@
     border-bottom:  solid 3px;
     border-color: rgb(22, 19, 19);
     background-color: black;
-    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-    background-position: center; /* Centraliza a imagem na div */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
 }
-
+.pad-format {
+    padding: 2%;
+}
+.flex-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.title-content {
+    font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    color: white;
+    text-shadow: 2px 2px 5px #313131;
+}
+.text-content {
+    padding-top: 3%;
+    width: 55%;
+    font-size: 1.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 247, 232);
+    text-shadow: 2px 2px 5px #313131;    
+}
 /* ------------------------ CONTAINER-1 ------------------------*/
 .cont-1 {
     background-image: url('/css/imgs/img7.jpg');
@@ -199,37 +223,99 @@
 
 /* ------------------------ CONTAINER-2 ------------------------*/
 .cont-2 {
-    background-image: url('/css/imgs/img2.jpg');
+    background-image: url('/css/imgs/img2-2.png');
 }
 
 
 /* ------------------------ CONTAINER-3 ------------------------*/
 
 .cont-3 {
-    background-image: url('/css/imgs/img10.jpg');
+    background-image: url('/css/imgs/img1-1.png');
 }
-
+.btn-cont-3 {
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 179, 37);
+    padding-top: 3%;
+    height: 10%;
+}
 
 /* ------------------------ CONTAINER-4 ------------------------*/
 .cont-4 {
-    background-image: url('/css/imgs/img1.jpg');
+    background-image: url('/css/imgs/img10-1.png');
 }
-
+.staff {
+    width: 40%;
+}
+.staff h2 {
+    font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px #313131;    
+}
+.staff .guildleaders {
+    color: rgb(240, 33, 33);
+}
+.staff .commanders {
+    color: rgb(233, 233, 36);
+}
+.staff .staff-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 247, 232);
+    text-shadow: 2px 2px 5px #313131;
+    font-size: 18px; 
+}
+.btn-cont-4 {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 179, 37);
+    padding-top: 5%;
+    height: 10%;
+}
 
 /* ------------------------ FOOTER ------------------------*/
 #footer {
-    width: 100%;
-    height: 50vh;
-    background-color: rgb(33, 33, 46);
-    overflow: hidden;
+    font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
 
-}
-#footer .logo {
+    width: 94%;
+    height: 10%;
+    background-color: rgb(9, 9, 12);
+    overflow: hidden;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: antiquewhite;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
-
-#footer .logo .dd-logo {
-    width: 15%;
+#footer .upper {
+    margin-ToP: 4%;
+    margin-bottom: 2%;
+    /* border: solid 1px;
+    border-color: aliceblue;  */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 12px;
 }
-
+.upper .dd-logo {
+    width: 13%;
+}
+.lower {
+    /* margin-top: 3%; */
+    width: 55%;
+    border-top: solid 1px;
+    border-color: rgb(97, 103, 107);
+}
+.lower .copyright {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lower .copyright p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}

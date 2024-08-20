@@ -11,8 +11,10 @@
 <body>
     <main id="main">
         <div class="page-home">
-            <!-- home video (nav-text-botoes)-->
+
+            <!---------------- [HOME-VIDEO / NAV] ------------------>
             <div class="home-video">
+
                 <!-- Vídeo de fundo -->
                 <video autoplay muted loop id="background-video">
                     <source src="css/videos/trailer1DD.mp4" type="video/mp4">
@@ -24,10 +26,13 @@
                     <div class="nav-logo">
                         <img class="gw2-logo" src="css/imgs/gw2logo_blue.png" alt="">
                     </div>
+                    
                     <ul class="nav-itens">
                         <li class="nav-botao" onclick="scrollToSection('quemsomos')">Quem somos</li>
+                        <li class="nav-botao open-modal-btn">Trajetória da DD</li>
                         <li class="nav-botao" onclick="scrollToSection('wvw')">WvW</li>
                         <li class="nav-botao" onclick="scrollToSection('juntese')">Junte-se a nós</li>
+                        <li class="nav-botao" onclick="scrollToSection('staff')">STAFF</li>
                         <li class="nav-icon">
                             <a href="https://www.youtube.com/@dragonsofdraezor" target=”_blank”><img src="css/imgs/yt_logo.png" alt="" class="logo-yt"></a>
                         </li>
@@ -41,7 +46,7 @@
                 <!-- text content -->
                 <div class="texto-conteudo-home">
                     <h1> A MAIOR GUILDA BRASILEIRA DE WVW!</h1>
-                    <p>Criada em meados de 2019, a guilda Dragons Of Draezor [DD] surgiu com o objetivo de unir os brasileiros que são apaixonados pelo pvp em grande escala. Venha fazer parte da maior guilda brasileira de WvW no Guild Wars 2. Recrutamento pelo Discord, aceitamos novatos e experientes.</p>
+                    <p>Criada em meados de 2016, a guilda Dragons Of Draezor [DD] trouxe em 2019 o objetivo de unir os brasileiros que são apaixonados pelo pvp em grande escala em uma só guilda. Venha fazer parte da maior guilda brasileira de WvW no Guild Wars 2. Recrutamento pelo Discord, aceitamos novatos e experientes.</p>
                 </div>
 
                 <!-- text content botoes -->
@@ -51,16 +56,21 @@
                 </div>
             </div>
 
+            <!----------------- [CONTAINERS] ------------------->
+
             <!-- Quem é a DD -->
-            <div id="quemsomos" class="container cont-1">
+            <div id="quemsomos" class="container img-1">
                 <div class="content1 pad-format">
                     <h1 class="title-content">Quem é a DD</h1>
                     <p class="text-content">A Dragons Of Draezor é uma guilda bem estruturada e casual, na qual prioriza o bom relacionamento e o respeito entre todos os associados, criada para jogadores brasileiros. Os Líderes da Guilda, o staff administrativo e membros auxiliares estão constantemente auxiliando os associados, e dentro das possibilidades, sempre há alguém online com o intuito de ajudar a completar conteúdo do jogo, quer seja PvE, PvP ou WvW.</p>
+                    <div class="position-btn">
+                        <div class="open-modal-btn botao-trajetoria" role="button" tabindex="0" aria-label="Open Modal"> CONHEÇA NOSSA TRAJETÓRIA COMPLETA</div>
+                    </div>  
                 </div>
             </div>
-
+            
             <!-- World VS World -->
-            <div id="wvw" class="container cont-2">
+            <div id="wvw" class="container img-2">
                 <div class="pad-format flex-end">
                     <h1 class="title-content">World VS World</h1>
                     <p class="text-content">O foco principal da guilda é WvW, para jogar conosco é preciso estar dentro da composição da DD, ou seja, utilizar as classes que fazem parte da "comp", nossas composições são criadas especificamente para o nosso estilo de jogo. Para isso, disponibilizamos video aulas sobre as classes utilizadas na comp, treinos e VOD-Reviews semanais.
@@ -70,7 +80,7 @@
             </div>
 
             <!-- Junte-se a nós -->
-            <div id="juntese" class="container cont-3">
+            <div id="juntese" class="container img-3">
                 <div class="pad-format">
                     <h1 class="title-content">Junte-se a nós</h1>
                     <p class="text-content">Recrutamos jogadores novatos e experientes que estejam dispostos a aprender, evoluir no WvW e jogar em composição com a maior guilda Brasileira do Guild Wars 2. Se voçe é um jogador que gosta de jogar em grupo e preza por uma boa organização e respeito, faça parte da hoje mesmo da DD.</p>
@@ -85,13 +95,13 @@
             </div>
 
             <!-- STAFF -->
-            <div class="container cont-4 flex-end">
+            <div id="staff" class="container img-4 flex-end">
                 <div class="pad-format">
                     <h1 class="title-content">Conheça a STAFF</h1>
                 </div>
                 <div class="staff">
                     <h2 class="guildleaders">Guild Líder</h2>
-                    <p class="staff-text">Jacques, Angus, Taz e Antimago.</p>
+                    <p class="staff-text">Jacques, Taz, Angus e Antimago</p>
                     <br>
                     <h2 class="commanders">Commanders</h2>
                     <p class="staff-text"> Aegis, Todou, Fissuris e Taz.</p>
@@ -109,14 +119,18 @@
     <footer id="footer">
         <div class="upper">
             <p><a href="https://www.youtube.com/watch?v=f16rXk-cOY4" target=”_blank”>YOUTUBE</a><br>
-            <a href="https://www.facebook.com/dragonsofdraezor" target=”_blank”>FACEBOOK</a><br>
-            <a href="https://www.instagram.com/ddraezor.oficial/" target=”_blank”>INSTAGRAM</a></P>
+                <a href="https://www.facebook.com/dragonsofdraezor" target=”_blank”>FACEBOOK</a><br>
+                <a href="https://www.instagram.com/ddraezor.oficial/" target=”_blank”>INSTAGRAM</a>
+            </p>
 
             <p><span class="footer-btn" onclick="scrollToSection('quemsomos')">SOBRE NÓS</span><br>
-            <span class="footer-btn" onclick="scrollToSection('wvw')">WORLD VS WORLD</span></p>
+                <span class="footer-btn open-modal-btn">TRAJETÓRIA DA DD</span><br>
+                <span class="footer-btn" onclick="scrollToSection('wvw')">WORLD VS WORLD</span>
+            </p>
 
             <p><span class="footer-btn" onclick="scrollToSection('juntese')">JUNTE-SE A DD<br>
-            STAFF</span></p>
+                STAFF</span>
+            </p>
         </div>
         <div class="lower">
             <div class="copyright">
@@ -125,7 +139,22 @@
             </div>    
         </div>
     </footer>
-  
+    
+    <!---------- MODAL ---------->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>TRAJETÓRIA DO GRUPO DD</h2>
+            <p class="recuo">A história do Grupo DD se inicia pela formação das Guildas Dragons of Draezor, Dragons from Draezor e a futura Dragons of Draezors. Desde o início do jogo, eu construí 3 guilds bank, tendo três delas, a Outsider, a Banco Real e a Depósito Estratégico. Um colega, inclusive de chopinho e de mesas de RPG, também jogador de Guild Wars 2, Serafim (Menzo in game), criara a Dragons of Draezor. Minhas três guildas bank originais tinham as três abas de banco, já a Dragons of Draezor, criada após a expansão HoT, não possuía nenhuma aba.</p>
+            <p class="recuo">Em março de 2016, o Menzo pediu que trocasse comigo uma das guildas, a Outsider pela Dragons of Draezor, e eu o fiz com ele, para ajuda-lo e incentivar a continuar jogando. Agora em posse da Dragons of Draezor, eu comecei a desenvolvê-la para obter as três abas, que se adquire completamente quando se atinge o Lvl 32. Após conseguir o lvl 32, resolvi continuar upando a guilda, e após longos 2 anos atingi o upgrade máximo. No finalzinho do ano de 2018, o Flynando (Fernando), a Luriah (Valéria), o Taz (Fábio), o Rottweiler (Lua) e o Antimago (Cid) me procuraram para abrir a guilda para eles jogarem WvW, já que a guilda tinha o nível máximo e podia clamar keeps, Towers, camps, e com o máximo de aura (lvl 8). Então, em março de 2019 eu abri a guilda Dragons of Draezor para esses membros, e passamos a jogar juntos WvW.</p>
+            <p class="recuo">Durante esse período nos divertíamos bastante com esse grupo de roaming, mas começamos a sonhar alto e dentre esses sonhos, começamos a cogitar construir uma guilda que fosse forte no WvW e que não tivéssemos de seguir as guildas gringas, falando em inglês, com comandos em inglês, mas sim jogando com brasileiros, uma grande zerg só de brasileiros, comandando em português. Sendo assim, em maio de 2019 começamos a investir nessa idéia e abrimos a guilda para outros jogadores. A primeira coisa que fizemos foi criar um ambiente muito alegre e agradável, sem cobranças exageradas e sem obrigações, afinal, acima de tudo, Guild Wars 2 é um jogo e estamos todos aqui para nos divertirmos. Claro, regras são importantes, justamente para manter essa harmonia, por isso as criamos desde o início.</p>
+            <p class="recuo">Com o rápido crescimento da Dragons of Draezor, vimos que somente nós não poderíamos organizar toda a guilda e abrimos para que houvessem integrantes coordenando nas várias áreas dentro do jogo, PVE, Dungeon, Fractal, Raid, PVP e, claro, acima de tudo, nosso sonho prioritário, o WvW. E em 2 anos começamos a cogitar a abrir o segundo Guild Hall, e assim, transformei a guild bank Depósito Estratégico, trocando o nome dela para Dragons from Draezor e começamos a upar seu guild hall, em 1 ano e meio atingimos o nível máximo. Com o passar do tempo, vários associados se juntaram ao nosso sonho, como Angus (Marcelo) que se juntou ao Conselho da guilda, bem como muitos outros, que compõem o nosso time de coordenadores das diversas áreas desse jogo fantástico. Hoje, temos uma guilda brasileira bem estruturada, organizada, com regras justas para todos, onde exaltamos a boa educação e respeito mútuo. Conseguimos com isso atingir a primeira etapa de nossos planos, nos transformamos na guilda mais forte de WvW a nível nacional, mas ainda falta muito para nos tornarmos a principal guilda brasileira e uma das mais fortes no WvW, com o trabalho árduo de nossos comandantes que sempre estão evoluindo, estudando e pesquisando, nós vamos avançando nessa direção.</p>   
+                
+                
+                
+            
+        </div>
+    </div>
     <!-- -------- SCRIPT -------- -->
     <script src="script.js"></script>
 </body>

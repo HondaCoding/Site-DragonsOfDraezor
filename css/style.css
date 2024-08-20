@@ -80,7 +80,6 @@
     font-family:"Semplicita Pro";
     /* font-family:"Open Sans", Arial, Helvetica, sans-serif; */
     font-weight: bold;
-    font-size: 1.15em;
     transition: transform 0.3s ease;
 }
 .nav-itens .dd-logo {
@@ -89,17 +88,21 @@
 }
 .nav-botao {
     margin-left: 1%;
+    font-size: 1.15em;
 }
 .nav-botao:hover {
     background-color: rgb(60, 60, 75);
-    border-radius: 8px;  
+    border-radius: 8px;
+    cursor: pointer; 
 }
 .nav-icon img{
     width: 88%;
     padding-top: 20%;
+    transition: transform 0.2s ease-in-out;
 }
 .nav-icon:hover {
-    transform: translateY(-1.5px);    
+    /* transform: translateY(-1.5px);     */
+    transform: scale(1.1); 
 }
 .logo-yt {
     max-width: 45px;
@@ -178,6 +181,7 @@
 }
 .botao-saibamais:hover {
     background-color: #81580c;
+    cursor: pointer;
 }
 
 /* ------------------------ CONTAINER ------------------------*/
@@ -288,8 +292,11 @@
     align-items: center;
     justify-content: center;
 }
+#footer .footer-btn {
+    cursor: pointer;
+}
 #footer .upper {
-    margin-ToP: 4%;
+    margin-ToP: 2%;
     margin-bottom: 2%;
     /* border: solid 1px;
     border-color: aliceblue;  */
@@ -299,8 +306,9 @@
     font-weight: bold;
     font-size: 12px;
 }
-.upper .dd-logo {
-    width: 13%;
+.upper a {
+    text-decoration: none;
+    color: inherit;
 }
 .lower {
     /* margin-top: 3%; */

@@ -11,7 +11,7 @@
 <body>
     <main id="main">
         <div class="page-home">
-
+            <!-- home video (nav-text-botoes)-->
             <div class="home-video">
                 <!-- Vídeo de fundo -->
                 <video autoplay muted loop id="background-video">
@@ -19,11 +19,11 @@
                     Seu navegador não suporta vídeo.
                 </video>
 
+                <!-- nav -->
                 <nav class="nav">
                     <div class="nav-logo">
                         <img class="gw2-logo" src="css/imgs/gw2logo_blue.png" alt="">
                     </div>
-
                     <ul class="nav-itens">
                         <li class="nav-botao" onclick="scrollToSection('quemsomos')">Quem somos</li>
                         <li class="nav-botao" onclick="scrollToSection('wvw')">WvW</li>
@@ -35,20 +35,19 @@
                             <a href="https://discord.gg/mUxBxHUzyq" target=”_blank”><img class="logo-discord" src="css/imgs/logo_discord.png" alt="" ></a>
                         </li>
                         <img class="dd-logo" src="css/imgs/dd_logo_semfundo.png" alt="">
-                        <!-- <li class="nav-icon">
-                            <a href="https://www.guildwars2.com/en/" target=”_blank”><img class="logo-gw2" src="css/imgs/gw2-logoblue.png" alt=""></a>
-                        </li> -->
                     </ul>
                 </nav>
 
+                <!-- text content -->
                 <div class="texto-conteudo-home">
                     <h1> A MAIOR GUILDA BRASILEIRA DE WVW!</h1>
-                    <p>Criada em meados de 2020, a guilda Dragons Of Draezor [DD] surgiu com o objetivo de unir os brasileiros que são apaixonados pelo pvp em grande escala. Venha fazer parte da maior guilda brasileira de WvW no Guild Wars 2. Recrutamento aberto, aceitamos novatos e experientes.</p>
+                    <p>Criada em meados de 2019, a guilda Dragons Of Draezor [DD] surgiu com o objetivo de unir os brasileiros que são apaixonados pelo pvp em grande escala. Venha fazer parte da maior guilda brasileira de WvW no Guild Wars 2. Recrutamento pelo Discord, aceitamos novatos e experientes.</p>
                 </div>
 
+                <!-- text content botoes -->
                 <div class="botoes">
                     <div class="botao-facaparte" onclick="redirectToURL()">FAÇA PARTE DA DD HOJE MESMO!</div>
-                    <div class="botao-saibamais"> SAIBA MAIS</div>
+                    <div class="botao-saibamais" onclick="scrollToSection('quemsomos')"> SAIBA MAIS</div>
                 </div>
             </div>
 
@@ -64,7 +63,7 @@
             <div id="wvw" class="container cont-2">
                 <div class="pad-format flex-end">
                     <h1 class="title-content">World VS World</h1>
-                    <p class="text-content">O foco principal da guilda é WvW, para jogar conosco é preciso estar dentro da composição da DD, ou seja, utilizar as classes que fazem parte da "comp", nossas composições são criadas especificamente para o nosso estilo de jogo. Para isso disponibilizamos video aulas sobre as classes utilizadas na comp, treinos e VOD-Reviews semanais.
+                    <p class="text-content">O foco principal da guilda é WvW, para jogar conosco é preciso estar dentro da composição da DD, ou seja, utilizar as classes que fazem parte da "comp", nossas composições são criadas especificamente para o nosso estilo de jogo. Para isso, disponibilizamos video aulas sobre as classes utilizadas na comp, treinos e VOD-Reviews semanais.
                     </p>
                     <p class="text-content">Corremos 4 vezes por semana: Seg, Quarta e Sáb (20:30), Sexta (22:45)</p>
                 </div>
@@ -75,11 +74,12 @@
                 <div class="pad-format">
                     <h1 class="title-content">Junte-se a nós</h1>
                     <p class="text-content">Recrutamos jogadores novatos e experientes que estejam dispostos a aprender, evoluir no WvW e jogar em composição com a maior guilda Brasileira do Guild Wars 2. Se voçe é um jogador que gosta de jogar em grupo e preza por uma boa organização e respeito, faça parte da hoje mesmo da DD.</p>
-                    <!-- <p class="text-content">O recrutamento é feito inteiramente pelo Discord.</p> -->
+
                     <div class="btn-cont-3">
-                        <a href="https://discord.gg/mUxBxHUzyq" target=”_blank” style="text-decoration: none; color: inherit;">
-                            <div class="botao-facaparte">RECRUTAMENTO PELO DISCORD</div>
-                        </a>
+                        <div class="botao-facaparte">
+                            <a href="https://discord.gg/mUxBxHUzyq" target=”_blank” style="text-decoration: none; color: inherit;">RECRUTAMENTO PELO DISCORD
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,29 +96,32 @@
                     <h2 class="commanders">Commanders</h2>
                     <p class="staff-text"> Aegis, Todou, Fissuris e Taz.</p>
                     <div class="btn-cont-4">
-                        <a href="https://discord.gg/mUxBxHUzyq" target=”_blank” style="text-decoration: none; color: inherit;">
-                            <div class="botao-saibamais">SAIBA MAIS</div>
-                        </a>
+                        <div class="botao-saibamais">
+                            <a href="https://discord.gg/mUxBxHUzyq" target=”_blank” style="text-decoration: none; color: inherit;">SAIBA MAIS
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>  
         </div>
     </main>
-    <!-- <img class="dd-logo" src="css/imgs/dd_logo_semfundo.png" alt=""> -->
+    
     <footer id="footer">
         <div class="upper">
-            <p>YOUTUBE<br>
-            FACEBOOK<br>
-            INTAGRAM</P>
-            <p>SOBRE NÓS<br>
-            WORLD VS WORLD</p>
-            <p>JUNTE-SE A DD<br>
-            STAFF </p>
+            <p><a href="https://www.youtube.com/watch?v=f16rXk-cOY4" target=”_blank”>YOUTUBE</a><br>
+            <a href="https://www.facebook.com/dragonsofdraezor" target=”_blank”>FACEBOOK</a><br>
+            <a href="https://www.instagram.com/ddraezor.oficial/" target=”_blank”>INSTAGRAM</a></P>
+
+            <p><span class="footer-btn" onclick="scrollToSection('quemsomos')">SOBRE NÓS</span><br>
+            <span class="footer-btn" onclick="scrollToSection('wvw')">WORLD VS WORLD</span></p>
+
+            <p><span class="footer-btn" onclick="scrollToSection('juntese')">JUNTE-SE A DD<br>
+            STAFF</span></p>
         </div>
         <div class="lower">
             <div class="copyright">
                 <p>Made by Hondachi</p>
-                <p>&copyCopyright None rights reserved </p>
+                <p>&copyNoCopyright - None rights reserved </p>
             </div>    
         </div>
     </footer>

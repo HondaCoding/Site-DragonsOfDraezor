@@ -226,7 +226,7 @@ body {
 }
 /* ------------ QUEM É A DD [CONTAINER-1] --------------*/
 .img-1 {
-    background-image: url('css/imgs/img7.jpg');
+    background-image: url('imgs/img7.jpg');
 }
 .position-btn {
     padding-top: 2%;
@@ -251,14 +251,14 @@ body {
 
 /* ------------ World VS World [CONTAINER-2] -------------*/
 .img-2 {
-    background-image: url('css/imgs/img2-2.png');
+    background-image: url('imgs/img2-2.png');
 }
 
 
 /* ----------- Junte-se a nós [CONTAINER-3] -----------*/
 
 .img-3 {
-    background-image: url('css/imgs/img1-1.png');
+    background-image: url('imgs/img1-1.png');
 }
 .btn-cont-3 {
     width: 50%;
@@ -270,7 +270,7 @@ body {
 
 /* ----------- Conheça a STAFF [CONTAINER-4] ------------*/
 .img-4 {
-    background-image: url('css/imgs/img10-1.png');
+    background-image: url('imgs/img10-1.png');
 }
 .position-staff-content {
     width: 40%;

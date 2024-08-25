@@ -1,4 +1,4 @@
-* { 
+* {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -12,186 +12,136 @@
     font-style: normal;
 }
 body {
+    background-color: black;
     position: relative;
+}
+/* ================== VARIÁVEIS de COR =============== */
+:root {
+    /*nav-bar*/
+    --nav-color: rgb(33, 33, 46);
+    --nav-color-gw2logo: rgb(20, 22, 39);
+    --nav-btn-color-hover: rgb(60, 60, 75);
+
+    --text-color: rgb(253, 238, 209);
+    --footer-color: antiquewhite;
+
+    /*botoes*/
+    --btnN-color-boxshadow: 0 0 0 1.5px rgba(0, 0, 0, 0.795); /*vale para todos os 3 btn*/
+    
+    --btn1-color-background: rgba(33, 41, 146, 0.7);
+    --btn1-color-border: rgba(49, 131, 255, 0.938);
+    --btn1-color-hover: rgb(1, 28, 116);
+
+    --btn2-color-background: rgba(53, 46, 46, 0.685);
+    --btn2-color-border: rgba(241, 143, 31, 0.527);
+    --btn2-color-hover: #81580c;
+
+    --btn3-color-background: rgba(189, 21, 21, 0.644);
+    --btn3-color-border: rgb(255, 0, 0);
+    --btn3-color-hover: rgba(156, 5, 0, 0.993);
 }
 
-/* ------------------------ HOME-VIDEO ------------------------*/
-/*------ VIDEO BACKGROUND [HOME] ------*/
-.home-video { 
-    padding-top: 2.1%;;
-    width: 100%;
-    height: 105vh;
-    position: relative;
-    overflow: hidden;
-    border-bottom:  solid 2px;
-    border-color: rgb(33, 33, 46);
-}
-#background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-}
-/* ------ CABEÇALHO [HOME]------*/
-.nav {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-    background-color: rgb(33, 33, 46);
+/* ==================== flex =================== */
+.flex-center-center {
     display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    align-items: center;
-    height: 11%;
-    /* object-fit: contain; */
-    /* overflow: hidden; */
-}
-.nav-logo {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 15%;
-    height: 100%;
-    padding-left: 1%;
-    padding-right: 1%;
-    background-color: rgb(20, 22, 39);
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.nav-logo .gw2-logo {
-    width: 100%;
-}
-
-.nav-itens {
-    width: 85%;
+.flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-    padding-right: 1.8%;
 }
-.nav-itens li {
-    object-fit: contain;
-    list-style-type: none;
-    color: white;
-    padding: 0.6em;
-    font-family:"Semplicita Pro";
-    /* font-family:"Open Sans", Arial, Helvetica, sans-serif; */
-    font-weight: bold;
-    transition: transform 0.3s ease;
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
 }
-.nav-itens .dd-logo {
-    object-fit: contain;
-    max-width: 12%;
-}
-.nav-botao {
-    margin-left: 1%;
-    font-size: 1.15em;
-}
-.nav-botao:hover {
-    background-color: rgb(60, 60, 75);
-    border-radius: 8px;
-    cursor: pointer; 
-}
-.nav-icon img{
-    width: 88%;
-    padding-top: 20%;
-    transition: transform 0.2s ease-in-out;
-}
-.nav-icon:hover {
-    /* transform: translateY(-1.5px);     */
-    transform: scale(1.1); 
-}
-.logo-yt {
-    max-width: 45px;
 
-}
-.logo-discord {
-    max-width: 35px;
-    object-fit: contain;
-}
-.logo-gw2 {
-    max-width: 35px;
-    object-fit: contain;
-}
-/* ------ TEXT CONTENT BACKGROUNG [HOME] ------*/
-.texto-conteudo-home {
-    z-index: 1;
-    width: 96%;
-    margin-top: 9%;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-.texto-conteudo-home h1 {
-    font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
+/* ============== formatações de texto ============== */
+.format-title-video {
+    font-family: 'Semplicita Pro';
     font-size: 65px;
     color: white;
     text-shadow: 2px 2px 5px #313131;
 }
-.texto-conteudo-home p {
-    width: 60%;
-    padding-top: 3%;
-    /* text-indent: 3em; */
-    font-size: 1.25em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 247, 232);
+.format-title { /*vai direto no <h1>*/
+    font-family: 'Semplicita Pro';
+    font-size: 55px;
+    color: white;
     text-shadow: 2px 2px 5px #313131;
 }
-.botoes {
-    object-fit: contain;
-    width: 50%;
-    margin-left: 2%;
-    margin-top: 1%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.format-title-staff {
+    font-family: 'Semplicita Pro';
+    font-size: 35px;
+    text-shadow: 2px 2px 5px #313131;
+}
+.format-text { /*vai direto no <p>*/
+    font-size: 1.25em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 179, 37);
+    color: var(--text-color);
+    text-shadow: 2px 2px 5px #313131;
+    width: 55%;
     padding-top: 3%;
-    height: 10%;
 }
-.botao-facaparte {
-    width: 49%;
-    height: 3em;
-    background-color: rgba(33, 41, 146, 0.7);
-    border: solid 1px;
-    border-color: rgba(49, 131, 255, 0.938);
-    box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.795);;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    margin-right: 5%;
+.format-text-staff{
+    font-size: 1.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    text-shadow: 2px 2px 5px #313131;
 }
-.botao-facaparte:hover {
-    background-color: rgb(1, 28, 116);
-    cursor: pointer;
+.format-footer-upper{
+    font-family: 'Semplicita Pro';
+    text-decoration: none;
+    cursor: default;
 }
-.botao-saibamais {
-    width: 23%;
-    height: 3em;
-    background-color: rgba(53, 46, 46, 0.685);
-    border: solid 1px;
-    border-color: rgba(241, 143, 31, 0.527);
-    box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.795);;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+footer a{
+    color: var(--footer-color);
+    text-decoration: none;
+    cursor: default;
 }
-.botao-saibamais:hover {
-    background-color: #81580c;
-    cursor: pointer;
+.format-footer-lower{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    cursor: default;
+}
+.color-lider {
+    color: red; /*Guild Líder*/
+}
+.color-conselho {
+    color: rgb(204, 0, 255); /*Commanders*/
+}
+.color-comm {
+    color: yellow; /*Commanders*/
+}
+.text-right {
+    text-align: right;
+}
+.format-staff { /* posicionamento do texto Lider, Conselho, Commanders*/
+    padding-left: 60%;
 }
 
-/* ------------------------ CONTAINER ------------------------*/
-.container {
+/* ================ containerBackgrounds ================ */
+.containerBackground-video {
     width: 100%;
-    min-height: 65vh;
-    max-height: 80vh;
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+#background-video {
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+.container-video{ /*borda somente em baixo*/
+    border-bottom:  solid 3px;
+    border-color: rgb(22, 19, 19);
+}
+.container { /*bordas e center background*/
     border-top:  solid 3px;
     border-bottom:  solid 3px;
     border-color: rgb(22, 19, 19);
@@ -199,166 +149,191 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: contain;
+}
+.containerBackground-sobrenos {
+    background-image: url(imgs/img7.jpg);
+    min-height: 65vh;
+
+}
+.containerBackground-wvw {
+    background-image: url(imgs/img2-2.png);
+    min-height: 65vh;
+}
+.containerBackground-juntese {
+    background-image: url(imgs/img1-1.png);
+    min-height: 65vh;
+
+}
+.containerBackground-staff {
+    background-image: url(imgs/img10-1.png);
+    min-height: 65vh;
+
+}
+footer {
+    color: antiquewhite;
+    background-color: rgb(9, 9, 12);
+}
+/* ================= content ================= */
+.container-content {
+    padding: 2%;
+    width: auto;
+}
+.content-title-home {
+    padding-top: 10%;
+}
+.content-text {
+    /* width: 60%; passei para o format-text*/
+    width: auto;
+}
+.content-btn {
+    width: auto;
+    padding-top: 3.5%;
     padding-bottom: 1%;
 }
-.pad-format {
-    padding: 2%;
-}
-.flex-end {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.title-content {
-    font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 55px;
-    color: white;
-    text-shadow: 2px 2px 5px #313131;
-}
-.text-content {
-    padding-top: 3%;
-    width: 55%;
-    font-size: 1.25em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 247, 232);
-    text-shadow: 2px 2px 5px #313131;    
-}
-/* ------------ QUEM É A DD [CONTAINER-1] --------------*/
-.img-1 {
-    background-image: url('imgs/img7.jpg');
-}
-.position-btn {
+.content-btn-staff {
     padding-top: 2%;
 }
-.botao-trajetoria {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 179, 37);
-    width: 29%;
-    height: 3em;
-    background-color: rgba(189, 21, 21, 0.644);
-    border: solid 1px;
-    border-color: rgb(255, 0, 0);
-    box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.795);;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.botao-trajetoria:hover{
-    background-color: rgba(156, 5, 0, 0.993);
-    cursor: pointer;
-}
-
-/* ------------ World VS World [CONTAINER-2] -------------*/
-.img-2 {
-    background-image: url('imgs/img2-2.png');
-}
-
-
-/* ----------- Junte-se a nós [CONTAINER-3] -----------*/
-
-.img-3 {
-    background-image: url('imgs/img1-1.png');
-}
-.btn-cont-3 {
-    width: 50%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 179, 37);
-    padding-top: 3%;
-    height: 10%;
-}
-
-/* ----------- Conheça a STAFF [CONTAINER-4] ------------*/
-.img-4 {
-    background-image: url('imgs/img10-1.png');
-}
-.position-staff-content {
-    width: 40%;
-    height: 100%;
-}
-.staff {
-    width: 100%;
-}
-.staff h2 {
-    font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    text-shadow: 2px 2px 5px #313131;   
-}
-.title-content {
-    padding-right: 3%;
-}
-.staff .guildleaders {
-    color: rgb(240, 33, 33);
-}
-.staff .commanders {
-    color: rgb(233, 233, 36);
-}
-.staff .staff-text {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 247, 232);
-    text-shadow: 2px 2px 5px #313131;
-    font-size: 18px; 
-}
-.btn-cont-4 {
-    width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 179, 37);
-    padding-top: 5%;
-    height: 10%;
-}
-
-/* ------------------------ FOOTER ------------------------*/
-#footer {
-    font-family: 'Semplicita Pro', "Open Sans", Arial, Helvetica, sans-serif;
-    width: 94%;
-    background-color: rgb(9, 9, 12);
-    overflow: hidden;
-    padding-left: 3%;
-    padding-right: 3%;
-    color: antiquewhite;
+.content-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
-#footer .footer-btn {
+
+/* ====================== nav-bar ===================== */
+.nav-bar {
+    width: 100%;
+    height: 11.5vh;
+    color: aliceblue;
+    background-color: var(--nav-color);
+    border-radius: 10px;
+}
+.nav-box-logo {
+    width: 15%;
+    height: 100%;
+    background-color: var(--nav-color-gw2logo);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.nav-box-logo img {
+    width: 100%;
+}
+/*--nav-btns--*/
+.nav-box-btns {
+    width: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    object-fit: contain;
+    list-style-type: none;
+}
+.nav-btn {
+    margin-right: 1%;
+    font-family: 'Semplicita Pro';
+    font-weight: bold;
+    font-size: 1.15em;
+    padding-right: 2%;
+}
+.nav-btn:hover {
+    background-color: var(--nav-btn-color-hover);
+    border-radius: 8px;
+    cursor: pointer; 
+}
+.nav-box-btns li {
+    padding: 0.5em; /* Altera o tamanho do padding dos botoes no Hover*/
+}
+.nav-icon a { /*centraliza a img dentro do <a> p se alinhar aos nav-btn */
+    display: flex;
+    align-items: center;
+}
+.nav-icon:hover {
+    transform: scale(1.1); 
+}
+.nav-icon .logo-yt {
+    width: 40px;
+}
+.nav-icon .logo-discord {
+    width: 32px;
+}
+.nav-icon-dd {
+    object-fit: contain;
+    width: 12%;
+    margin-right: 1%;
+}
+
+/* ====================== botoes ===================== */
+.format-btn {
+    border-color: var(--btn1-color-border);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 179, 37); /*cor do texto dos botoes*/
+    border: solid 1px;
+    height: 3em;
+    font-size: 16px;
+    box-shadow: var(--btnN-color-boxshadow);
+    margin-right: 3%;
+}
+.btn-1 {
+    width: 350px;
+    background-color: var(--btn1-color-background);
+    border-color: var(--btn1-color-border);   
+}
+.btn-2 {
+    width: 150px;
+    background-color: var(--btn2-color-background);
+    border-color: var(--btn2-color-border);
+}
+.btn-3 {
+    width: 400px;
+    background-color: var(--btn3-color-background);
+    border-color: var(--btn3-color-border);
+}
+.btn-1:hover {
+    background-color: var(--btn1-color-hover);
     cursor: pointer;
 }
-#footer .upper {
-    margin-ToP: 2%;
-    margin-bottom: 2%;
-    /* border: solid 1px;
-    border-color: aliceblue;  */
-    width: 50%;
+.btn-2:hover {
+    background-color: var(--btn2-color-hover);
+    cursor: pointer;
+}
+.btn-3:hover {
+    background-color: var(--btn3-color-hover);
+    cursor: pointer;
+}
+
+/* =============== footer ================== */
+.upper{
+    width: 55%;
     display: flex;
-    justify-content: space-between;
-    font-weight: bold;
+    justify-content: space-around;
+    padding-bottom: 2%;
     font-size: 12px;
 }
-.upper a {
-    text-decoration: none;
-    color: inherit;
-}
-.lower {
-    /* margin-top: 3%; */
-    width: 55%;
+.lower{
+    padding-top: 1%;
     border-top: solid 1px;
-    border-color: rgb(97, 103, 107);
-}
-.lower .copyright {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    border-color: rgb(68, 68, 68); /*linha que divide upper/lower*/
+    width: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.lower .copyright p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 10px;
+    justify-content: center;
 }
 
 
-/* -------------------- MODAL -------------------- */
+/* ================== BACK TO TOP =============== */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    background-color: transparent;
+}
+.back-to-top-btn img {
+    width: 80%;
+}
+
+/* ================== MODAL =================== */
 .modal-dd-logo {
     position: absolute;
     width: 10%;
@@ -410,7 +385,6 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
 .close-btn:hover,
 .close-btn:focus {
     color: rgb(255, 232, 131);
@@ -418,17 +392,3 @@ body {
     cursor: pointer;
 }
 
-
-/* -------------------- ICON BACK TOPO -------------------- */
-.back-to-top-btn {
-    position: fixed;
-    bottom: 2%;
-    right: 1%;
-    cursor: pointer;
-    display: none;
-    z-index: 999;
-    background-color: transparent;
-}
-.back-to-top-btn img {
-    width: 80%;
-}

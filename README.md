@@ -11,10 +11,15 @@ Para conferir o site <a href="https://hondacoding.github.io/Site-DragonsOfDraezo
 <br>
 ## Principais preocupações durante o desenvolvimento:
 - **UX/UI** : a experiência do usário, levando em conta o design, cores chamativas, fácil navegação, informações curtas e diretas de forma que instigue o usuário a *saber mais*.
-- **Básico da Programação Web**: o código foi desenvolvido de forma tradicional e sem bibliotecas/frameworks que otimizam o design, com o objetivo de consolidar conceitos básicos de css e html.
+- **Fundamentos da Programação Web**: o código foi desenvolvido de forma tradicional e sem bibliotecas/frameworks que otimizam o design, com o objetivo de consolidar conceitos básicos de html, css e javascript.
+- **Estruturação do site**: Estruturar o site de forma a reduzir redundâncias, utilizando variáveis e classes reutizáveis. 
+- **Responsividade**: tornar o site bem acessível para mobile, de forma que a navegação e leitura fique adequada.
 
 ##  Tecnologias utilizadas no desenvolvimento:
+- <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" height="30" alt="figma logo"  />
 - <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" height="30" alt="html5 logo"/>
 - <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" height="30" alt="css3 logo"  />
 - <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30" alt="javascript logo"  />
 
+## Mapa mental da estrutura do site:
+<img src="css/img/Mapa-Estrutura.png">

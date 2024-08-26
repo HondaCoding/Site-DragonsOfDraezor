@@ -15,6 +15,7 @@ body {
     background-color: black;
     position: relative;
 }
+
 /* ================== VARIÁVEIS de COR =============== */
 :root {
     /*nav-bar*/
@@ -124,13 +125,13 @@ footer a{
 /* ================ containerBackgrounds ================ */
 .containerBackground-video {
     width: 100%;
-    height: 110vh;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
-#background-video {
+.containerBackground-video video {
     width: 100%;
-    height: 110vh;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -153,7 +154,6 @@ footer a{
 .containerBackground-sobrenos {
     background-image: url(imgs/img7.jpg);
     min-height: 65vh;
-
 }
 .containerBackground-wvw {
     background-image: url(imgs/img2-2.png);
@@ -173,6 +173,7 @@ footer {
     color: antiquewhite;
     background-color: rgb(9, 9, 12);
 }
+
 /* ================= content ================= */
 .container-content {
     padding: 2%;
@@ -200,6 +201,9 @@ footer {
 }
 
 /* ====================== nav-bar ===================== */
+.nav-mobile-position {
+    display: none;
+}
 .nav-bar {
     width: 100%;
     height: 11.5vh;
@@ -318,9 +322,8 @@ footer {
     justify-content: center;
 }
 
-
 /* ================== BACK TO TOP =============== */
-.back-to-top-btn {
+#back-to-top {
     position: fixed;
     bottom: 2%;
     right: 1%;
@@ -329,7 +332,7 @@ footer {
     z-index: 999;
     background-color: transparent;
 }
-.back-to-top-btn img {
+#back-to-top img {
     width: 80%;
 }
 
@@ -392,3 +395,139 @@ footer {
     cursor: pointer;
 }
 
+/* ====================== MEDIA QUERIES ======================== */
+@media (max-width: 800px){
+    .container-content {
+        padding: 4%;
+    }
+    .nav-btn {
+        font-size: 0.9em;
+    }   
+}
+
+@media (max-width: 650px){
+    .container-content {
+        padding: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-title-home {
+        padding: 2%;
+    }
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .content-btn {
+        padding-top: 8%;
+        padding-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .format-btn {
+        margin-top: 10%;
+    }
+    .content-btn-staff {
+        padding-top: 7%;
+    }
+    .format-title-video {
+        text-align: center;
+        font-size: 3em;
+    }
+    .format-text {
+        width: 90%;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .format-staff {
+        padding-left: 0%;
+    }
+    /* -------modal-------- */
+    .modal-dd-logo {
+        width: 20%;
+        left: 40%;
+    }
+    .modal-content {
+        margin-top: 10%;
+        padding-top: 10%;
+    }
+    /* ------nav----- */
+    .nav-bar {
+        width: 0;
+        height: 0;
+    }
+    .nav-box-logo,.nav-icon-dd {
+        display: none;
+    }
+    .nav-mobile-position {
+        display: block;
+    }
+    .nav-mobile-logo {
+        display: block;
+        width: 110px;
+    }  
+    .nav-mobile-menu {
+        top: 5%;
+        right: 5%;
+        position: absolute;
+        font-size: 50px;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+    .nav-mobile-menu:hover {
+        cursor: pointer;
+    }
+    .nav-box-btns {
+        display: none;
+        padding-top: 2%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-color: #1f1f3dd5;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-box-btns li {
+        margin: 8px;
+        font-size: 18px;
+        width: 90%;
+    }
+    .nav-box-btns .nav-btn:hover {
+        background-color: azure;
+        color: #141436;
+    }
+    .nav-icon a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .content-footer{
+        width: 80%;
+    }
+    .upper,.lower{
+        width: 100%;
+    }
+    .format-footer-upper{
+        font-size: 8px;
+    }
+    .format-footer-lower{
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 490px) {
+    .format-title {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 651px){
+    .nav-box-btns {
+        display: flex;
+    }
+}

@@ -8,32 +8,42 @@
     <link rel="shortcut icon" href="css/imgs/dd_logo_semfundo.png" type="image/x-ixcon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icone do github no footer-->
 </head>
-<body>
+<body id="body">
     <!-- VIDEO -->
     <div class="containerBackground-video container-video">
         <video autoplay muted loop id="background-video">
             <source src="css/videos/trailer1DD.mp4" type="video/mp4">
         </video>
         <div class="container-content">
-            <nav class="nav-bar flex-row">
-                <div class="nav-box-logo flex-center-center">
-                    <img src="css//imgs/gw2logo_blue.png" alt="">
-                </div>
-                    <ul class="nav-box-btns flex-row">
-                        <li class="nav-btn" onclick="scrollToSection('quemsomos')">Quem somos</li>
-                        <li class="nav-btn open-modal-btn">Trajetória da DD</li>
-                        <li class="nav-btn" onclick="scrollToSection('wvw')">WvW</li>
-                        <li class="nav-btn" onclick="scrollToSection('juntese')">Junte-se a nós</li>
-                        <li class="nav-btn" onclick="scrollToSection('staff')">STAFF</li>
-                        <li class="nav-icon ">
-                            <a href="https://www.youtube.com/@dragonsofdraezor" target=”_blank”><img src="css/imgs/yt_logo.png" alt="" class="logo-yt"></a>
-                        </li>
-                        <li class="nav-icon">
-                            <a href="https://discord.gg/mUxBxHUzyq" target=”_blank”><img class="logo-discord" src="css/imgs/logo_discord.png" alt="" ></a>
-                        </li>
-                        <img class="nav-icon-dd" src="css/imgs/dd_logo_semfundo.png" alt=""> 
-                    </ul>
+            <nav>
+                <div class="nav-mobile-position">
+                    <img class="nav-mobile-logo" src="css/imgs/dd_logo_semfundo.png" >
+                    <div class="nav-mobile-menu" id="menuToggle">
+                        &#9776;
+                    </div>
+                </div>  
+
+                <div class="nav-bar flex-row" id="nav-bar">
+                    <div class="nav-box-logo flex-center-center">
+                        <img src="css//imgs/gw2logo_blue.png" alt="">
+                    </div>
+                        <ul class="nav-box-btns flex-row" id="navMenu">
+                            <li class="nav-btn menu-item" onclick="scrollToSection('quemsomos')">Quem somos</li>
+                            <li class="nav-btn menu-item open-modal-btn">Trajetória da DD</li>
+                            <li class="nav-btn menu-item" onclick="scrollToSection('wvw')">WvW</li>
+                            <li class="nav-btn menu-item" onclick="scrollToSection('juntese')">Junte-se a nós</li>
+                            <li class="nav-btn menu-item" onclick="scrollToSection('staff')">STAFF</li>
+                            <li class="nav-icon menu-item">
+                                <a href="https://www.youtube.com/@dragonsofdraezor" target=”_blank”><img src="css/imgs/yt_logo.png" alt="" class="logo-yt"></a>
+                            </li>
+                            <li class="nav-icon menu-item">
+                                <a href="https://discord.gg/mUxBxHUzyq" target=”_blank”><img class="logo-discord" src="css/imgs/logo_discord.png" alt="" ></a>
+                            </li>
+                            <img class="nav-icon-dd" src="css/imgs/dd_logo_semfundo.png" alt=""> 
+                        </ul>
+                </div> 
             </nav>
+            
             <div class="content-title-home">
                 <h1 class="format-title-video">A MAIOR GUILDA BRASILEIRA DE WVW!</h1>
             </div>
@@ -62,6 +72,7 @@
             </div>
         </div>
     </div>
+
     <!-- WVW -->
     <div id="wvw" class="containerBackground-wvw container">
         <div class="container-content">
@@ -149,9 +160,11 @@
             </div>
         </div>
     </footer>
-    <button class="back-to-top-btn">
-        <img src="css/icons/alinhar-topo.png" alt="">
+
+    <button id="back-to-top">
+        <img src="css/icons/alinhar-topo.png">
     </button>  
+
     <!---------- MODAL ---------->
     <div id="myModal" class="modal">
         <img class="modal-dd-logo" src="css/imgs/dd_logo_semfundo.png" alt="">
@@ -164,6 +177,7 @@
             <p class="recuo">Com o rápido crescimento da Dragons of Draezor, vimos que somente nós não poderíamos organizar toda a guilda e abrimos para que houvessem integrantes coordenando nas várias áreas dentro do jogo, PVE, Dungeon, Fractal, Raid, PVP e, claro, acima de tudo, nosso sonho prioritário, o WvW. E em 2 anos começamos a cogitar a abrir o segundo Guild Hall, e assim, transformei a guild bank Depósito Estratégico, trocando o nome dela para Dragons from Draezor e começamos a upar seu guild hall, em 1 ano e meio atingimos o nível máximo. Com o passar do tempo, vários associados se juntaram ao nosso sonho, como Angus (Marcelo) que se juntou ao Conselho da guilda, bem como muitos outros, que compõem o nosso time de coordenadores das diversas áreas desse jogo fantástico. Hoje, temos uma guilda brasileira bem estruturada, organizada, com regras justas para todos, onde exaltamos a boa educação e respeito mútuo. Conseguimos com isso atingir a primeira etapa de nossos planos, nos transformamos na guilda mais forte de WvW a nível nacional, mas ainda falta muito para nos tornarmos a principal guilda brasileira e uma das mais fortes no WvW, com o trabalho árduo de nossos comandantes que sempre estão evoluindo, estudando e pesquisando, nós vamos avançando nessa direção.</p>
         </div>
     </div>
+    
     <!-- -------- SCRIPT -------- -->
     <script src="script.js"></script>
 </body>

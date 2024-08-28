@@ -122,9 +122,10 @@ footer a{
     padding-left: 60%;
 }
 
-/* ================ containerBackgrounds ================ */
+/* ================ CONTAINER BACKGROUNDS ================ */
 .containerBackground-video {
     width: 100%;
+    min-height: 100vh;
     height: auto;
     position: relative;
     overflow: hidden;
@@ -174,7 +175,7 @@ footer {
     background-color: rgb(9, 9, 12);
 }
 
-/* ================= content ================= */
+/* ================= CONTENT ================= */
 .container-content {
     padding: 2%;
     width: auto;
@@ -200,7 +201,7 @@ footer {
     align-items: center;
 }
 
-/* ====================== nav-bar ===================== */
+/* ====================== NAV-BAR ===================== */
 .nav-mobile-position {
     display: none;
 }
@@ -266,7 +267,7 @@ footer {
     margin-right: 1%;
 }
 
-/* ====================== botoes ===================== */
+/* ====================== BOTOES ===================== */
 .format-btn {
     border-color: var(--btn1-color-border);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -305,7 +306,7 @@ footer {
     cursor: pointer;
 }
 
-/* =============== footer ================== */
+/* =============== FOOTER ================== */
 .upper{
     width: 55%;
     display: flex;

@@ -27,6 +27,8 @@ De forma resumida, o **1º Container principal** será utilizado só uma vez, po
 
 Podemos usar como exemplo a classe "container-content", essa classe é responsável por afastar todos os elementos das bordas do site (através do padding), portanto, todas as demais seções que utilzarem esta classe irão ter seus elementos afastados da borda, seguindo um padrão.  
 
+<img src="assets/1container.gif" width="25%">
+
 Além disso, todas as **div** que se tratam de 'content' (conteúdo) utilizam width de 100% pensando em um melhor manejo na hora de aplicar a responsividade. Dessa forma, a estilização quanto a posição do texto, tamanho e cor ficam por responsabilidade das classes **.format-** ("format-title", "format-text", etc). 
 
 ## 📑 Organização do CSS:

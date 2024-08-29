@@ -408,7 +408,7 @@ footer {
 
 @media (max-width: 650px){
     .container-content {
-        padding: 4%;
+        padding: 5vh 3% 3% 3%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -417,6 +417,7 @@ footer {
         padding: 2%;
     }
     .content-text {
+        padding-top: 3vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -428,21 +429,33 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .format-btn {
         margin-top: 10%;
+    }
+    .btn-1 {
+        width: 320px;
+    }
+    .btn-3 {
+        width: 70%;
+        height: 5vh;
+    }
+    .btn-1,.btn-2,.btn-3 {
+        font-weight: bold
     }
     .content-btn-staff {
         padding-top: 7%;
     }
     .format-title-video {
         text-align: center;
-        font-size: 3em;
+        font-size: 4.3em;
     }
     .format-text {
         width: 90%;
         font-size: 1.3em;
         text-align: center;
+        color: white;
     }
     .format-staff {
         padding-left: 0%;

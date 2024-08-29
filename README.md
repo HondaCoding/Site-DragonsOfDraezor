@@ -9,23 +9,24 @@
 <br><br>
 Para conferir o site <a href="https://hondacoding.github.io/Site-DragonsOfDraezor/">clique aqui!</a>
 <br>
+
 ## 🤯 Principais preocupações durante o desenvolvimento:
-- **Estrutura do site**: estruturar o site de forma a eliminar redundâncias, utilizando variáveis e classes reutizáveis.
-- **Organização do CSS**: organizar o css de forma lógica, simples e fácil manutenção.
-- **UX/UI** : a experiência do usário, levando em conta o design, cores chamativas, fácil navegação, informações curtas e diretas de forma que instigue o usuário a *saber mais*.
-- **Fundamentos da Programação Web**: o site foi desenvolvido sem o uso de bibliotecas/frameworks que otimizam o design, com o objetivo de consolidar conceitos básicos de html, css, javascript e flexbox.
-- **Responsividade**: tornar o site bem acessível para mobile, de forma que a navegação e leitura fique adequada.
+- **Estrutura do site**: estruturar o site de forma a eliminar redundâncias, utilizando variáveis e classes para reduzir a quantidade de código.
+- **Organização do CSS**: organizar o css de forma lógica, simples e de fácil entendimento e manutenção.
+- **UX/UI** : levou-se em conta o design com cores chamativas, fontes convencionais, fácil navegação e informações curtas e diretas de forma que instigue o usuário a *saber mais*.
+- **Fundamentos da Programação Web**: desenvolvido sem o uso de bibliotecas/frameworks que otimizam o design, o objetivo foi de consolidar conceitos básicos de html, css, javascript e flexbox.
+- **Responsividade**: tornar o site acessível para mobile, de forma que a navegação e leitura fique adequada.
+<br>
 
 ## 🧱 Estrutura de construção do site:
-A estrutura do site foi pensada de forma a possuir **2 Containers principais**, ou seja, **2 Classes principais** que seriam reutizadas ao longo do site, como por exemplo o afastamento dos elementos na tela com relação a margem limite da direita e esquerda (padding), etc. Esses 2 containers principais são divididos em:
-- **1º Container principal**: está relacionado a seção que possui vídeo como fundo, ou seja, a primeira seção quando o site é aberto;
-- **2º Container principal**: está relacionado as demais seções da página como **Quem é a DD**, **World VS World**, **Junte-se a nós** e **STAFF**, que também podem ser observadas no nav.
-
+A estrutura do site foi pensada de forma a possuir **'2 Containers principais'** de classes que seriam reutizadas ao longo do site com o objetivo de reduzir repetição de código. Estes **'2 Containers principais'** podem ser entendidos como uma espécie de *Conjunto de Classes*, e foram divididos em:
+- **1º Container principal**: relacionado a seção que possui vídeo como fundo, ou seja, a primeira seção, quando o site é aberto;
+- **2º Container principal**: relacionado as demais seções da página como por exemplo, **Quem é a DD**, **World VS World**, **Junte-se a nós** e **STAFF**.
 <img src="assets/EstruturaDoSite.png" width="100%">
 
-De forma resumida, o **1º Container principal** será utilizado só uma vez, pois há somente uma seção com vídeo de fundo e barra de navegação, as demais seções possuem imagens de fundo e botões. Sendo assim, as classes do **2º Container principal** serão reutilizadas nas demais seções de forma a manter um padrão de posicionamento, tamanho, cor, etc e não ser necessário declarar os mesmo estilos toda hora para cada elemento.  
-
-Podemos usar como exemplo a classe "container-content", essa classe é responsável por afastar todos os elementos das bordas do site (através do padding), portanto, todas as demais seções que utilzarem esta classe irão ter seus elementos afastados da borda, seguindo um padrão.  
+> [!NOTE]
+> O **1º Container principal** será utilizado somente uma vez, pois só existe uma seção com *vídeo de fundo* e *barra de navegação*. Dessa maneira, as demais seções, excluíndo o **footer** (rodapé), utlizarão o conjunto de classes do **2º Container principal**. A organização/hierarquia entre cada elemento nestes **'2 Containers principais'** pode ser observada no gif abaixo:
+<br>
 
 <div>
   <img src="assets/1container.gif" width="35%">
@@ -33,7 +34,27 @@ Podemos usar como exemplo a classe "container-content", essa classe é responsá
 </div>
 <br>
 
-Além disso, todas as **div** que se tratam de **content-title** ou **content-text** utilizam width de 100% pensando em um melhor manejo na hora de aplicar a responsividade. Dessa forma, a estilização quanto a posição do texto, tamanho e cor ficam por responsabilidade das classes **.format-** ("format-title", "format-text", etc). 
+Podemos ver como a classe **"container-content"** é responsável por afastar todos os elementos das bordas do site (através do padding), e portanto, todas as seções que utilzarem esta classe terão seus elementos afastados da borda, seguindo um padrão e não sendo necessário declarar o mesmo padding toda vez para cada tag, basta atribuir essa classe à tag, como podemos observar na estrutura do código abaixo:
+
+```css
+<div id="quemsomos" class="containerBackground-sobrenos container">
+        <div class="container-content">
+            <div class="content-title">
+                <h1 class="format-title"></h1>
+            </div>
+            <div class="content-text">
+                <p class="format-text"></p>
+            </div>
+            <div class="content-btn">
+                <button class="btn-3 format-btn open-modal-btn"></button>
+            </div>
+        </div>
+</div>
+```
+
+>[!IMPORTANT]
+> Todas as **div** que se tratam de **content-title** ou **content-text** utilizam width de 100% pensando em um melhor manejo na hora de aplicar a responsividade. Dessa forma, a estilização quanto a posição do texto, tamanho e cor ficam por responsabilidade das classes **.format-** ("format-title", "format-text", etc). 
+<br>
 
 ## 📑 Organização do CSS:
 O CSS foi dividido em categorias da seguinte maneira:
@@ -50,7 +71,9 @@ O CSS foi dividido em categorias da seguinte maneira:
 - **MODAL:** diz respeito ao modal que se abre quando clicado no botão "Conheça a nossa trajetória completa" e "Trajetória da DD", configurações de posição, cor e tudo relacionado ao modal;
 - **MEDIA QUERIES:** relacionado a responsividade.
 
-*Obs:* *As categorias são dividas por comentarios utilizando* "==============================================" 
+>[!TIP]
+> *As categorias são dividas por comentarios utilizando* "==============================================" 
+<br>
 
 ## 💻 Tecnologias utilizadas no desenvolvimento:
 - <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" height="30" alt="figma logo"  />

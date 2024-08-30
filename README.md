@@ -13,7 +13,7 @@ Para conferir o site <a href="https://hondacoding.github.io/Site-DragonsOfDraezo
 ## 🤯 Principais preocupações durante o desenvolvimento:
 - **Estrutura do site**: estruturar o site de forma a eliminar redundâncias, utilizando variáveis e classes para reduzir a quantidade de código.
 - **Organização do CSS**: organizar o css de forma lógica, simples e de fácil entendimento e manutenção.
-- **UX/UI** : levou-se em conta o design com cores chamativas, fontes convencionais, fácil navegação e informações curtas e diretas de forma que instigue o usuário a *saber mais*.
+- **UX/UI** : levou-se em conta o design com cores chamativas, fontes coniventes, fácil navegação e informações curtas e diretas de forma que instigue o usuário a *saber mais*.
 - **Fundamentos da Programação Web**: desenvolvido sem o uso de bibliotecas/frameworks que otimizam o design, o objetivo foi de consolidar conceitos básicos de html, css, javascript e flexbox.
 - **Responsividade**: tornar o site acessível para mobile, de forma que a navegação e leitura fique adequada.
 <br>

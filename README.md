@@ -1,4 +1,5 @@
 <h1>Site Dragons Of Draezor</h1>
+Confira o site <a href="https://hondacoding.github.io/Site-DragonsOfDraezor/">clicando aqui!</a>
 
 <div align="center">
   <img src="css/imgs/dd_logo_semfundo.png" width="200">
@@ -7,7 +8,6 @@
    Projeto de desenvolvimeto de um site para divulgação da guilda **Dragons Of Draezor** do jogo online ***Guild Wars 2*** promovido pela empresa ***ArenaNet***.
   O site se trata de uma landing page que tem o objetivo de divulgar a guilda, caso o usuário se interesse o mesmo é encaminhado ao Discord da guilda onde estão concentradas todas as informações. Além disso, há também links que encaminham o usuário para o youtube e instagram da guilda.
 <br><br>
-Para conferir o site <a href="https://hondacoding.github.io/Site-DragonsOfDraezor/">clique aqui!</a>
 <br>
 
 ## 🤯 Principais preocupações durante o desenvolvimento:
